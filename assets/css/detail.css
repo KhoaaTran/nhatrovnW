@@ -1,0 +1,161 @@
+.main {
+    padding: 30px 0;
+}
+
+.overview {
+    text-align: justify;
+}
+
+.overview__body {
+    align-items: center;
+}
+
+.overview__img-wrap {
+    padding: 0 30px;
+}
+
+.overview__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overview__heading {
+    margin-top: 10px;
+    position: relative;
+    color: #000;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.5;
+}
+
+.overview__heading::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #ff0000;
+}
+
+.overview__price {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.overview__staff {
+    margin-top: 10px;
+}
+
+.overview__staff-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 15px;
+}
+
+.overview__desc {
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.overview__staff-name {
+    text-align: center;
+    background-color: #242582;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.overview__desc-wrapper {
+    margin-top: 10px;
+}
+
+.overview__desc-title {
+    line-height: 1.4;
+    font-weight: 600;
+    color: #446084;
+}
+
+.overview__highlight {
+    font-weight: 600;
+}
+
+/* Detail */
+.detail {
+    margin-top: 30px;
+    position: relative;
+    padding-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: justify;
+}
+
+.detail__desc-list li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.detail__heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.detail__desc-wrapper::marker,
+.detail__desc-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.detail__body {
+    margin-top: 10px;
+}
+
+.detail__desc-title {
+    display: inline-block;
+}
+
+.detail__desc-wrapper + .detail__desc-wrapper {
+    margin-top: 10px;
+}
+
+.detail__desc-list,
+.detail__desc-body {
+    line-height: 1.4;
+    font-weight: 1.6rem;
+}
+
+.detail__desc-list {
+    margin-bottom: 10px;
+}
+
+.detail__desc {
+    margin-top: 10px;
+}
+
+.detail__desc-img {
+    width: 50%;
+}
+
+.detail__desc-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.detail__desc-list-inner,
+.detail__desc-body {
+    line-height: 1.5;
+}
+
+.overview__staff-name:hover {
+    background: #ff0000;
+    color: #fff;
+    transform: scaleX(1.1);
+}
