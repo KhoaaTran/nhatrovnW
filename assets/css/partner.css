@@ -174,11 +174,12 @@
 
 .overview-card {
   background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(201, 201, 203, 0.4);
+  box-shadow: 0px 20px 60px 10px rgba(158, 158, 162, 0.4);
   border-radius: 16px;
   padding: 12px;
   margin-left: 12px;
   margin-top: 20px;
+  border: 1px solid var(--primary-color);
 }
 
 .overview-card__item-wrap {
