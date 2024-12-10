@@ -94,7 +94,7 @@
     <script defer src="./script.js"></script>
     <title>Nhatrovn</title>
   </head>
-  <body>
+  <body class="stop-scrolling">
     <header class="header sticky-top">
       <div class="container">
         <nav class="header__inner">
@@ -418,7 +418,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
-            <img class="logo" src="./assets/icons/logo.png" alt="" />
+            <img class="logo" src="./assets/icons/logo-blue.png" alt="logo" />
             <div class="footer__info align-items-center">
               <i class="fa-solid fa-house-chimney"></i>
               <p class="footer__location-desc">
@@ -524,7 +524,14 @@
       </div>
     </footer>
 
-    <div class="overlay"></div>
+    <div class="pop-up-wrapper hidden">
+      <figure class="pop-up-img-wrap">
+        <img class="pop-up-img" src="./assets/icons/pop-up.png" alt="" />
+
+        <i class="pop-up-icon far fa-times-circle"></i>
+      </figure>
+    </div>
+    <div class="overlay hidden"></div>
     <script>
       const youtubeVD = document.querySelector(".blog-iframe");
       const preLoading = document.querySelector(".preloading");

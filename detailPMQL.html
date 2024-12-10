@@ -1,593 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- FontAwsome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- Bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous"
-        />
-        <!-- Swiper -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css"
-        />
-        <script
-            defer
-            src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"
-        ></script>
-        <!-- Favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="57x57"
-            href="./assets/favicon/apple-icon-57x57.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="60x60"
-            href="./assets/favicon/apple-icon-60x60.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="72x72"
-            href="./assets/favicon/apple-icon-72x72.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="./assets/favicon/apple-icon-76x76.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="114x114"
-            href="./assets/favicon/apple-icon-114x114.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="120x120"
-            href="./assets/favicon/apple-icon-120x120.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="144x144"
-            href="./assets/favicon/apple-icon-144x144.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="152x152"
-            href="./assets/favicon/apple-icon-152x152.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-icon-180x180.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-            href="./assets/favicon/android-icon-192x192.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="96x96"
-            href="./assets/favicon/favicon-96x96.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./assets/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-            name="msapplication-TileImage"
-            content="./assets/favicon/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <!-- Reset css -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <!-- Detail -->
-        <link rel="stylesheet" href="./assets/css/detail.css" />
-        <!-- Responsive -->
-        <link rel="stylesheet" href="./assets/css/responsive.css" />
-        <!-- SrollReveal -->
-        <script defer src="https://unpkg.com/scrollreveal"></script>
-        <!-- Swiper Setup-->
-        <script defer src="./swiper.js"></script>
-        <!-- Script -->
-        <script defer src="./script.js"></script>
-        <title>Nhatrovn</title>
-    </head>
-    <body>
-        <header class="header sticky-top">
-            <div class="container">
-                <nav class="header__inner">
-                    <a class="header__link-logo" href="./index.html">
-                        <img
-                            src="./assets/icons/logo.png"
-                            alt=""
-                            class="header__logo"
-                        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Detail -->
+    <link rel="stylesheet" href="./assets/css/detail.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- SrollReveal -->
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper Setup-->
+    <script defer src="./swiper.js"></script>
+    <!-- Script -->
+    <script defer src="./script.js"></script>
+    <title>Nhatrovn</title>
+  </head>
+  <body>
+    <header class="header sticky-top">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="header__link-logo" href="./index.html">
+            <img src="./assets/icons/logo.png" alt="" class="header__logo" />
+          </a>
+
+          <div class="navbar">
+            <ul class="navbar-inner d-lg-flex">
+              <li class="header__item">
+                <a href="./index.html" class="header__link">TRANG CHỦ</a>
+              </li>
+
+              <li class="header__item">
+                <div class="header__link">
+                  SẢN PHẨM
+                  <i class="header__link-icon fa-solid fa-chevron-down"></i>
+                </div>
+
+                <ul class="navbar-lv2">
+                  <li class="navbar-lv2__item">
+                    <a href="./detailPMQL.html" class="navbar-lv2__link">
+                      <i class="navbar-icon fa-solid fa-layer-group"></i>
+                      Phần mềm quản lý chuyên sâu CHDV - Nhà trọ
                     </a>
+                  </li>
+                  <li class="navbar-lv2__item">
+                    <a href="./detailQLVH.html" class="navbar-lv2__link">
+                      <i class="navbar-icon fa-solid fa-list-check"></i>
+                      Quản lý vận hành CHDV - Nhà trọ</a
+                    >
+                  </li>
+                  <li class="navbar-lv2__item">
+                    <a href="./detailQLMG.html" class="navbar-lv2__link"
+                      ><i
+                        class="navbar-icon fa-solid fa-building-circle-check"></i>
+                      Phần mềm quản lý công ty môi giới cho thuê CHDV - Nhà trọ
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
-                    <div class="navbar">
-                        <ul class="navbar-inner d-lg-flex">
-                            <li class="header__item">
-                                <a href="./index.html" class="header__link"
-                                    >TRANG CHỦ</a
-                                >
-                            </li>
+              <li class="header__item">
+                <a href="./partnerListTemplate.html" class="header__link"
+                  >ĐỐI TÁC</a
+                >
+              </li>
 
-                            <li class="header__item">
-                                <div class="header__link">
-                                    SẢN PHẨM
-                                    <i
-                                        class="header__link-icon fa-solid fa-chevron-down"
-                                    ></i>
-                                </div>
+              <li class="header__item">
+                <a href="./deposit.html" rel="noopener" class="header__link"
+                  >KÝ GỬI CHDV - NHÀ TRỌ</a
+                >
+              </li>
 
-                                <ul class="navbar-lv2">
-                                    <li class="navbar-lv2__item">
-                                        <a
-                                            href="./detailPMQL.html"
-                                            class="navbar-lv2__link"
-                                        >
-                                            <i
-                                                class="navbar-icon fa-solid fa-layer-group"
-                                            ></i>
-                                            Phần mềm quản lý chuyên sâu CHDV -
-                                            Nhà trọ
-                                        </a>
-                                    </li>
-                                    <li class="navbar-lv2__item">
-                                        <a
-                                            href="./detailQLVH.html"
-                                            class="navbar-lv2__link"
-                                        >
-                                            <i
-                                                class="navbar-icon fa-solid fa-list-check"
-                                            ></i>
-                                            Quản lý vận hành CHDV - Nhà trọ</a
-                                        >
-                                    </li>
-                                    <li class="navbar-lv2__item">
-                                        <a
-                                            href="./detailQLMG.html"
-                                            class="navbar-lv2__link"
-                                            ><i
-                                                class="navbar-icon fa-solid fa-building-circle-check"
-                                            ></i>
-                                            Phần mềm quản lý công ty môi giới
-                                            cho thuê CHDV - Nhà trọ
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+              <li class="header__item">
+                <a href="./job.html" class="header__link">TUYỂN DỤNG</a>
+              </li>
+            </ul>
 
-                            <li class="header__item">
-                                <a href="./partnerListTemplate.html" class="header__link"
-                                  >ĐỐI TÁC</a
-                                >
-                              </li>
-
-                            <li class="header__item">
-                                <a
-                                    href="./deposit.html"
-                                    rel="noopener"
-                                    class="header__link"
-                                    >KÝ GỬI CHDV - NHÀ TRỌ</a
-                                >
-                            </li>
-
-                            <li class="header__item">
-                                <a href="./job.html" class="header__link"
-                                    >TUYỂN DỤNG</a
-                                >
-                            </li>
-                        </ul>
-
-                        <div class="nav__close d-lg-none">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-
-                    <div class="nav__toggle d-lg-none">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </nav>
+            <div class="nav__close d-lg-none">
+              <i class="fas fa-times"></i>
             </div>
-        </header>
+          </div>
 
-        <main class="main">
-            <div class="container">
-                <div class="overview">
-                    <div class="row overview__body">
-                        <div class="overview__left swiper col-md-6 col-12">
-                            <div class="swiper-wrapper overview__img-list">
-                                <figure class="swiper-slide overview__img-wrap">
-                                    <img
-                                        src="./assets/images/pmql-01.jpg"
-                                        alt=""
-                                        class="overview__img"
-                                    />
-                                </figure>
+          <div class="nav__toggle d-lg-none">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-                                <figure class="swiper-slide overview__img-wrap">
-                                    <img
-                                        src="./assets/images/pmql-02.jpeg"
-                                        alt=""
-                                        class="overview__img"
-                                    />
-                                </figure>
+    <main class="main">
+      <div class="container">
+        <div class="overview">
+          <div class="row overview__body">
+            <div class="overview__left swiper col-md-6 col-12">
+              <div class="swiper-wrapper overview__img-list">
+                <figure class="swiper-slide overview__img-wrap">
+                  <img
+                    src="./assets/images/pmql-01.jpg"
+                    alt=""
+                    class="overview__img" />
+                </figure>
 
-                                <figure class="swiper-slide overview__img-wrap">
-                                    <img
-                                        src="./assets/images/pmql-03.jpeg"
-                                        alt=""
-                                        class="overview__img"
-                                    />
-                                </figure>
+                <figure class="swiper-slide overview__img-wrap">
+                  <img
+                    src="./assets/images/pmql-02.jpeg"
+                    alt=""
+                    class="overview__img" />
+                </figure>
 
-                                <figure class="swiper-slide overview__img-wrap">
-                                    <img
-                                        src="./assets/images/pmql-04.jpeg"
-                                        alt=""
-                                        class="overview__img"
-                                    />
-                                </figure>
-                            </div>
+                <figure class="swiper-slide overview__img-wrap">
+                  <img
+                    src="./assets/images/pmql-03.jpeg"
+                    alt=""
+                    class="overview__img" />
+                </figure>
 
-                            <div class="swiper-pagination"></div>
-                            <div class="prev_slide swiper-button-prev">
-                                <i
-                                    class="swiper__icon fa-solid fa-chevron-left"
-                                ></i>
-                            </div>
-                            <div class="next_slide swiper-button-next">
-                                <i
-                                    class="swiper__icon fa-solid fa-chevron-right"
-                                ></i>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="overview__wrap">
-                                <h1 class="overview__heading">
-                                    Phần mềm quản lý chuyên sâu CHDV - Nhà trọ
-                                </h1>
+                <figure class="swiper-slide overview__img-wrap">
+                  <img
+                    src="./assets/images/pmql-04.jpeg"
+                    alt=""
+                    class="overview__img" />
+                </figure>
+              </div>
 
-                                <!-- <span class="overview__price"
+              <div class="swiper-pagination"></div>
+              <div class="prev_slide swiper-button-prev">
+                <i class="swiper__icon fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="next_slide swiper-button-next">
+                <i class="swiper__icon fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="overview__wrap">
+                <h1 class="overview__heading">
+                  Phần mềm quản lý chuyên sâu CHDV - Nhà trọ
+                </h1>
+
+                <!-- <span class="overview__price"
                                     >5,900 - 15,000</span
                                 > -->
 
-                                <p class="overview__staff">
-                                    Liên hệ nhân viên tư vấn:
-                                </p>
+                <p class="overview__staff">Liên hệ nhân viên tư vấn:</p>
 
-                                <div class="overview__staff-wrapper">
-                                    <a
-                                        href="tel: 0938022166"
-                                        class="overview__staff-name"
-                                        >Mr Hòa 0938.022.166
-                                    </a>
-                                    <a
-                                        href="tel: 0969516025"
-                                        class="overview__staff-name"
-                                        >Mr Uy 0969.516.025
-                                    </a>
+                <div class="overview__staff-wrapper">
+                  <a href="tel: 0938022166" class="overview__staff-name"
+                    >Mr Hòa 0938.022.166
+                  </a>
+                  <a href="tel: 0969516025" class="overview__staff-name"
+                    >Mr Uy 0969.516.025
+                  </a>
 
-                                    <a
-                                        href="tel: 0888922103"
-                                        class="overview__staff-name"
-                                        >Ms Thư 0888.922.103
-                                    </a>
+                  <a href="tel: 0888922103" class="overview__staff-name"
+                    >Ms Thư 0888.922.103
+                  </a>
 
-                                    <a
-                                        href="https://www.facebook.com/giaiphapquanly.nhatrovn"
-                                        class="overview__staff-name"
-                                    >
-                                        FACEBOOK
-                                    </a>
-                                </div>
-
-                                <div class="overview__desc-wrapper">
-                                    <h2 class="overview__desc-title">
-                                        Giải pháp quản lý căn hộ, nhà trọ, phòng
-                                        trọ của Nhatrovn bao gồm phần mềm quản
-                                        lý và dịch vụ quản lý vận hành.
-                                    </h2>
-                                    <ol class="overview__desc-body">
-                                        <li class="overview__desc">
-                                            <strong class="overview__highlight"
-                                                >Phần mềm quản lý</strong
-                                            >
-
-                                            giúp chủ nhà truy cập và nắm chi
-                                            tiết các hoạt động cho thuê, giảm
-                                            chi phí nhân sự và tăng hiệu quả
-                                            quản trị
-                                        </li>
-                                        <li class="overview__desc">
-                                            <strong class="overview__highlight"
-                                                >Dịch vụ quản lý vận
-                                                hành</strong
-                                            >
-                                            cung cấp giải pháp toàn diện cho chủ
-                                            nhà, bao gồm đảm bảo hiệu suất kinh
-                                            doanh, xử lý thủ tục cho thuê, thu
-                                            tiền, bảo trì, xử lý sự cố và giải
-                                            quyết khiếu nại…
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <a
+                    href="https://www.facebook.com/giaiphapquanly.nhatrovn"
+                    class="overview__staff-name">
+                    FACEBOOK
+                  </a>
                 </div>
 
-                <div class="detail">
-                    <h2 class="detail__heading">Thông tin chi tiết</h2>
-                    <ol class="detail__body">
-                        <li class="detail__desc-wrapper">
-                            <h3 class="detail__desc-title">
-                                Giới thiệu Phần Mềm Quản Lý Nhatrovn
-                            </h3>
-                            <div class="detail__desc">
-                                <p class="detail__desc-body">
-                                    <strong class="highlight"
-                                        >Phần mềm quản lý
-                                        <strong class="highlight1"
-                                            >chuyên sâu</strong
-                                        >
-                                        CHDV - nhà trọ Nhatrovn
-                                    </strong>
-                                    là một giải pháp nghiệp vụ toàn diện và chi
-                                    tiết giúp chủ nhà, người quản lý, doanh
-                                    nghiệp vận hành cho thuê tiết kiệm thời
-                                    gian, chi phí và nâng cao hiệu quả hoạt
-                                    động. Phần mềm được phát triển dựa trên nhu
-                                    cầu và kinh nghiệm thực tế của Hệ thống
-                                    Nhatrovn khi quản lý và vận hành cho thuê
-                                    gần 2,000 phòng trọ và CHDV.
-                                </p>
-                            </div>
-                        </li>
+                <div class="overview__desc-wrapper">
+                  <h2 class="overview__desc-title">
+                    Giải pháp quản lý căn hộ, nhà trọ, phòng trọ của Nhatrovn
+                    bao gồm phần mềm quản lý và dịch vụ quản lý vận hành.
+                  </h2>
+                  <ol class="overview__desc-body">
+                    <li class="overview__desc">
+                      <strong class="overview__highlight"
+                        >Phần mềm quản lý</strong
+                      >
 
-                        <li class="detail__desc-wrapper">
-                            <h3 class="detail__desc-title">
-                                Điểm nổi bật của Phần mềm quản lý Nhatrovn
-                            </h3>
-                            <div class="detail__desc">
-                                <p class="detail__desc-body">
-                                    Phần mềm quản lý
-                                    <strong class="highlight"
-                                        >chuyên sâu</strong
-                                    >
-                                    CHDV - nhà trọ Nhatrovn có nhiều tính năng
-                                    ưu việt, bao gồm:
-                                </p>
-
-                                <ul class="detail__desc-list">
-                                    <li class="detail__desc-list-inner">
-                                        Theo dõi chính xác tình trạng phòng:
-                                        phần mềm giúp chủ nhà, người quản lý dễ
-                                        dàng theo dõi tình trạng phòng đang
-                                        trống, sắp trống, đã cọc, đã cho thuê,
-                                        đã trả phòng,... Phần mềm cũng thống kê
-                                        được số ngày đã trống, doanh thu hao hụt
-                                        ở cấp độ từng phòng.
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Xem được tổng quan và chi tiết dòng
-                                        tiền: phần mềm giúp chủ nhà, người quản
-                                        lý dễ dàng xem được tổng quan và chi
-                                        tiết dòng tiền của nhà trọ, bao gồm tiền
-                                        cọc, tiền phòng, các loại phí (điện,
-                                        nước, dịch vụ,...), các khoản điện nước
-                                        và chi phí đã chi/chưa chi, kiểm soát
-                                        chênh lệch thu chi, lãi lỗ và các khoản
-                                        khác.
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Quản lý nhân viên: phần mềm giúp chủ
-                                        nhà, người quản lý phân quyền và quản lý
-                                        tiến độ công việc cũng như kiểm soát số
-                                        tiền thực thu, thực nộp của nhân viên.
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Tính tiền và gửi hóa đơn thu tiền bằng
-                                        tin nhắn tự động cho người thuê qua ứng
-                                        dụng SMS/Zalo/Telegram (chức năng gửi
-                                        tin nhắn chỉ có ở phiên bản nâng cấp Pro
-                                        và Premium)
-                                    </li>
-
-                                    <li class="detail__desc-list-inner">
-                                        Quản lý thông tin khách ở: phần mềm giúp
-                                        chủ nhà, người quản lý dễ dàng quản lý
-                                        thông tin khách ở, bao gồm số lượng
-                                        người ở, số lượng xe, tình hình đăng ký
-                                        lưu trú (bao gồm form dữ liệu định dạng
-                                        theo chuẩn CT01). Phần mềm cũng hỗ trợ
-                                        tính năng ký và lưu trữ hợp đồng điện
-                                        tử.
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Quản lý tài sản: phần mềm giúp chủ nhà,
-                                        người quản lý dễ dàng quản lý tài sản
-                                        của nhà trọ, bao gồm danh mục, số lượng
-                                        và khấu hao vật dụng, trang thiết bị vật
-                                        tư...
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="detail__desc-wrapper">
-                            <h3 class="detail__desc-title">
-                                Giá trị gia tăng từ Phần Mềm Quản Lý Nhatrovn
-                            </h3>
-                            <div class="detail__desc">
-                                <p class="detail__desc-body">
-                                    Nếu bạn đang tìm kiếm một giải pháp quản lý
-                                    CHDV - nhà trọ hiệu quả, hãy liên hệ với
-                                    Nhatrovn ngay hôm nay để được tư vấn và hỗ
-                                    trợ với những quyền lợi cộng thêm đặc biệt:
-                                </p>
-
-                                <ul class="detail__desc-list">
-                                    <li class="detail__desc-list-inner">
-                                        Hỗ trợ nhập liệu ban đầu
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Hỗ trợ hướng dẫn sử dụng và đào tạo nhân
-                                        viên sử dụng
-                                    </li>
-                                    <li class="detail__desc-list-inner">
-                                        Hỗ trợ kỹ thuật trong suốt quá trình sử
-                                        dụng
-                                    </li>
-                                </ul>
-
-                                <p class="detail__desc-body">
-                                    Chọn phần mềm Nhatrovn vì Tiết kiệm – Hiệu
-                                    quả - Dễ dùng!
-                                </p>
-                            </div>
-                        </li>
-                    </ol>
+                      giúp chủ nhà truy cập và nắm chi tiết các hoạt động cho
+                      thuê, giảm chi phí nhân sự và tăng hiệu quả quản trị
+                    </li>
+                    <li class="overview__desc">
+                      <strong class="overview__highlight"
+                        >Dịch vụ quản lý vận hành</strong
+                      >
+                      cung cấp giải pháp toàn diện cho chủ nhà, bao gồm đảm bảo
+                      hiệu suất kinh doanh, xử lý thủ tục cho thuê, thu tiền,
+                      bảo trì, xử lý sự cố và giải quyết khiếu nại…
+                    </li>
+                  </ol>
                 </div>
+              </div>
             </div>
-        </main>
+          </div>
+        </div>
 
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
-                        <img
-                            class="logo"
-                            src="./assets/icons/logo.png"
-                            alt=""
-                        />
-                        <div class="footer__info align-items-center">
-                            <i class="fa-solid fa-house-chimney"></i>
-                            <p class="footer__location-desc">
-                                22 đường số 37, P. Tân Phong, Q7, Tp.HCM
-                            </p>
-                        </div>
+        <div class="detail">
+          <h2 class="detail__heading">Thông tin chi tiết</h2>
+          <ol class="detail__body">
+            <li class="detail__desc-wrapper">
+              <h3 class="detail__desc-title">
+                Giới thiệu Phần Mềm Quản Lý Nhatrovn
+              </h3>
+              <div class="detail__desc">
+                <p class="detail__desc-body">
+                  <strong class="highlight"
+                    >Phần mềm quản lý
+                    <strong class="highlight1">chuyên sâu</strong>
+                    CHDV - nhà trọ Nhatrovn
+                  </strong>
+                  là một giải pháp nghiệp vụ toàn diện và chi tiết giúp chủ nhà,
+                  người quản lý, doanh nghiệp vận hành cho thuê tiết kiệm thời
+                  gian, chi phí và nâng cao hiệu quả hoạt động. Phần mềm được
+                  phát triển dựa trên nhu cầu và kinh nghiệm thực tế của Hệ
+                  thống Nhatrovn khi quản lý và vận hành cho thuê gần 2,000
+                  phòng trọ và CHDV.
+                </p>
+              </div>
+            </li>
 
-                        <div class="footer__info align-items-center">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p class="footer__location-desc">
-                                nhatrovn.vn@gmail.com
-                            </p>
-                        </div>
+            <li class="detail__desc-wrapper">
+              <h3 class="detail__desc-title">
+                Điểm nổi bật của Phần mềm quản lý Nhatrovn
+              </h3>
+              <div class="detail__desc">
+                <p class="detail__desc-body">
+                  Phần mềm quản lý
+                  <strong class="highlight">chuyên sâu</strong>
+                  CHDV - nhà trọ Nhatrovn có nhiều tính năng ưu việt, bao gồm:
+                </p>
 
-                        <div class="footer__info align-items-center">
-                            <i class="fa-solid fa-phone"></i>
-                            <p class="footer__location-desc">
-                                0928.022.166 - Mr Hòa
-                            </p>
-                        </div>
-                    </div>
+                <ul class="detail__desc-list">
+                  <li class="detail__desc-list-inner">
+                    Theo dõi chính xác tình trạng phòng: phần mềm giúp chủ nhà,
+                    người quản lý dễ dàng theo dõi tình trạng phòng đang trống,
+                    sắp trống, đã cọc, đã cho thuê, đã trả phòng,... Phần mềm
+                    cũng thống kê được số ngày đã trống, doanh thu hao hụt ở cấp
+                    độ từng phòng.
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Xem được tổng quan và chi tiết dòng tiền: phần mềm giúp chủ
+                    nhà, người quản lý dễ dàng xem được tổng quan và chi tiết
+                    dòng tiền của nhà trọ, bao gồm tiền cọc, tiền phòng, các
+                    loại phí (điện, nước, dịch vụ,...), các khoản điện nước và
+                    chi phí đã chi/chưa chi, kiểm soát chênh lệch thu chi, lãi
+                    lỗ và các khoản khác.
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Quản lý nhân viên: phần mềm giúp chủ nhà, người quản lý phân
+                    quyền và quản lý tiến độ công việc cũng như kiểm soát số
+                    tiền thực thu, thực nộp của nhân viên.
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Tính tiền và gửi hóa đơn thu tiền bằng tin nhắn tự động cho
+                    người thuê qua ứng dụng SMS/Zalo/Telegram (chức năng gửi tin
+                    nhắn chỉ có ở phiên bản nâng cấp Pro và Premium)
+                  </li>
 
-                    <div
-                        class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-5"
-                    >
-                        <h3 class="footer__title">Liên hệ với chúng tôi</h3>
+                  <li class="detail__desc-list-inner">
+                    Quản lý thông tin khách ở: phần mềm giúp chủ nhà, người quản
+                    lý dễ dàng quản lý thông tin khách ở, bao gồm số lượng người
+                    ở, số lượng xe, tình hình đăng ký lưu trú (bao gồm form dữ
+                    liệu định dạng theo chuẩn CT01). Phần mềm cũng hỗ trợ tính
+                    năng ký và lưu trữ hợp đồng điện tử.
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Quản lý tài sản: phần mềm giúp chủ nhà, người quản lý dễ
+                    dàng quản lý tài sản của nhà trọ, bao gồm danh mục, số lượng
+                    và khấu hao vật dụng, trang thiết bị vật tư...
+                  </li>
+                </ul>
+              </div>
+            </li>
 
-                        <ul class="footer__social">
-                            <li>
-                                <a
-                                    href="https://www.facebook.com/giaiphapquanly.nhatrovn"
-                                    ><img
-                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/facebook.png"
-                                /></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.youtube.com/@nhatrovn_official"
-                                    ><img
-                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/youtube-1.png"
-                                /></a>
-                            </li>
+            <li class="detail__desc-wrapper">
+              <h3 class="detail__desc-title">
+                Giá trị gia tăng từ Phần Mềm Quản Lý Nhatrovn
+              </h3>
+              <div class="detail__desc">
+                <p class="detail__desc-body">
+                  Nếu bạn đang tìm kiếm một giải pháp quản lý CHDV - nhà trọ
+                  hiệu quả, hãy liên hệ với Nhatrovn ngay hôm nay để được tư vấn
+                  và hỗ trợ với những quyền lợi cộng thêm đặc biệt:
+                </p>
 
-                            <li>
-                                <a
-                                    href="https://www.tiktok.com/@nhatrovn_official"
-                                    ><img
-                                        src="https://anhomegroup.vn/wp-content/uploads/2023/07/tiktok.jpg"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <ul class="detail__desc-list">
+                  <li class="detail__desc-list-inner">
+                    Hỗ trợ nhập liệu ban đầu
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Hỗ trợ hướng dẫn sử dụng và đào tạo nhân viên sử dụng
+                  </li>
+                  <li class="detail__desc-list-inner">
+                    Hỗ trợ kỹ thuật trong suốt quá trình sử dụng
+                  </li>
+                </ul>
 
-                    <div
-                        class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-5 mt-5"
-                    >
-                        <h3 class="footer__title">Hướng dẫn</h3>
-                        <ul class="footer__list-link">
-                            <li class="footer__link-wrap">
-                                <a href="#!">Trang chủ</a>
-                            </li>
-                            <li class="footer__link-wrap">
-                                <a href="#!">Sản phẩm</a>
-                            </li>
-                            <li class="footer__link-wrap">
-                                <a href="#!">Ký gửi CHDV - Nhà trọ</a>
-                            </li>
-                            <li class="footer__link-wrap">
-                                <a href="#!">Tuyển dụng</a>
-                            </li>
-                        </ul>
-                    </div>
+                <p class="detail__desc-body">
+                  Chọn phần mềm Nhatrovn vì Tiết kiệm – Hiệu quả - Dễ dùng!
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
 
-                    <div
-                        class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-5 mt-5"
-                    >
-                        <h3 class="footer__title">Bản đồ</h3>
-
-                        <div class="map-wrapper">
-                            <iframe
-                                class="map-iframe"
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1003509.3493643086!2d106.711527!3d10.73769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9b33053ec3%3A0x59e19c7585923791!2zMjIgxJDGsOG7nW5nIHPhu5EgMzcsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1690979811008!5m2!1svi!2sus"
-                                style="border: 0"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="footer__copyright">Copyright 2023 © NHATROVN</p>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
+            <img class="logo" src="./assets/icons/logo.png" alt="" />
+            <div class="footer__info align-items-center">
+              <i class="fa-solid fa-house-chimney"></i>
+              <p class="footer__location-desc">
+                22 đường số 37, P. Tân Phong, Q7, Tp.HCM
+              </p>
             </div>
-        </footer>
 
-        <div class="overlay"></div>
-    </body>
+            <div class="footer__info align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="footer__location-desc">nhatrovn.vn@gmail.com</p>
+            </div>
+
+            <div class="footer__info align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <p class="footer__location-desc">0928.022.166 - Mr Hòa</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-5">
+            <h3 class="footer__title">Liên hệ với chúng tôi</h3>
+
+            <ul class="footer__social">
+              <li>
+                <a href="https://www.facebook.com/giaiphapquanly.nhatrovn"
+                  ><img
+                    src="https://anhomegroup.vn/wp-content/uploads/2023/07/facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@nhatrovn_official"
+                  ><img
+                    src="https://anhomegroup.vn/wp-content/uploads/2023/07/youtube-1.png"
+                /></a>
+              </li>
+
+              <li>
+                <a href="https://www.tiktok.com/@nhatrovn_official"
+                  ><img
+                    src="https://anhomegroup.vn/wp-content/uploads/2023/07/tiktok.jpg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-5 mt-5">
+            <h3 class="footer__title">Hướng dẫn</h3>
+            <ul class="footer__list-link">
+              <li class="footer__link-wrap">
+                <a href="#!">Trang chủ</a>
+              </li>
+              <li class="footer__link-wrap">
+                <a href="#!">Sản phẩm</a>
+              </li>
+              <li class="footer__link-wrap">
+                <a href="#!">Ký gửi CHDV - Nhà trọ</a>
+              </li>
+              <li class="footer__link-wrap">
+                <a href="#!">Tuyển dụng</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-5 mt-5">
+            <h3 class="footer__title">Bản đồ</h3>
+
+            <div class="map-wrapper">
+              <iframe
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1003509.3493643086!2d106.711527!3d10.73769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9b33053ec3%3A0x59e19c7585923791!2zMjIgxJDGsOG7nW5nIHPhu5EgMzcsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1690979811008!5m2!1svi!2sus"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copyright">Copyright 2023 © NHATROVN</p>
+      </div>
+    </footer>
+
+    <div class="overlay hidden"></div>
+  </body>
 </html>

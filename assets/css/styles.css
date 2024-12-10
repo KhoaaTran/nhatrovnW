@@ -528,6 +528,64 @@ ol {
   color: #0056b3;
 }
 
+/* Pop-up */
+/* Overlay bao phủ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Wrapper cho pop-up */
+.pop-up-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* Hình ảnh bao bọc */
+.pop-up-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 24px;
+}
+
+/* Hình ảnh */
+.pop-up-img {
+  max-height: 80vh;
+  object-fit: contain; /* Giữ nguyên tỷ lệ và vừa với khung */
+  display: block;
+}
+
+/* Icon đóng */
+.pop-up-icon {
+  position: absolute;
+  z-index: 1;
+  top: -1rem;
+  right: -1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Outside */
 .gutter-set-5 {
   padding: 0 5px;
