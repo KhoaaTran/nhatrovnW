@@ -320,6 +320,20 @@ ul {
   line-height: 1.5;
 }
 
+.body__img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body__caption {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-top: 0.8rem;
+  text-align: center;
+  font-style: italic;
+}
+
 .body__content {
   line-height: 2;
 }
