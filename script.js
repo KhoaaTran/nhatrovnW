@@ -75,6 +75,9 @@ sr.reveal(`.form__deposit, .overview__wrap`, { origin: "right" });
 sr.reveal(".content__heading-wrap, .detail", { origin: "bottom" });
 
 // ************************** Pop up ****************************
+popup.classList.add("hidden");
+overlay.classList.add("hidden");
+
 function d2(n) {
   return (n < 10 ? "0" : "") + n;
 }
@@ -118,11 +121,13 @@ function compareDate(key) {
   return curDate === item.expiration;
 }
 
-if (!compareDate("pop-up")) {
-  popup.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-  body.classList.add("stop-scrolling");
-}
+setTimeout(() => {
+  if (!compareDate("pop-up")) {
+    popup.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    body.classList.add("stop-scrolling");
+  }
+}, 1500);
 
 // Close Popup
 const closeModal = function () {
