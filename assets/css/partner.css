@@ -315,3 +315,23 @@ ul {
 .page__btn.active:hover {
   color: var(--primary-pagination);
 }
+
+.body__heading {
+  line-height: 1.5;
+}
+
+.body__content {
+  line-height: 2;
+}
+
+.body__content--heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.body__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

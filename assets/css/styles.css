@@ -50,8 +50,8 @@ ol {
 }
 
 .logo {
-  width: 124px;
-  height: 124px;
+  width: 130px;
+
   object-fit: cover;
 }
 
@@ -88,8 +88,7 @@ ol {
 }
 
 .header__logo {
-  width: 64px;
-  height: 64px;
+  width: 130px;
   object-fit: cover;
 }
 
