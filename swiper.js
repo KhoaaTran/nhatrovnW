@@ -1,6 +1,6 @@
 const prev = document.querySelector(".prev_slide");
 const next = document.querySelector(".next_slide");
-let swiper = new Swiper(".swiper-top", {
+let swiper = new Swiper(".swiper", {
   loop: true,
   spaceBetween: 32,
   speed: 500,
