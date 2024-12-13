@@ -56,7 +56,7 @@ const sr = ScrollReveal({
 
 footerProduct.addEventListener("click", function () {
   footerProductIcon.classList.toggle("rotate");
-  footerLinkProduct.classList.toggle("hidden");
+  footerLinkProduct.classList.toggle("d-none");
 });
 
 sr.reveal(`.banner__img-wrap`, { interval: 100 });
