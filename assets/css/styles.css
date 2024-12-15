@@ -79,6 +79,9 @@ ol {
 /* Header */
 .header {
   background: var(--primary-color);
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .header__inner {
