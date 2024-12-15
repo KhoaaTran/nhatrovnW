@@ -562,6 +562,7 @@ ol {
   max-height: 80vh;
   object-fit: contain; /* Giữ nguyên tỷ lệ và vừa với khung */
   display: block;
+  border-radius: 20px;
 }
 
 /* Icon đóng */

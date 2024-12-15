@@ -52,3 +52,7 @@
   line-height: 2;
   font-size: 2.5rem;
 }
+
+.inner__figure-img {
+  border-radius: 16px;
+}
