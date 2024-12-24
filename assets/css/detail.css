@@ -119,7 +119,8 @@
 }
 
 .detail__desc-title {
-  display: inline-block;
+  display: inline;
+  line-height: 1.5;
 }
 
 .detail__desc-wrapper + .detail__desc-wrapper {
