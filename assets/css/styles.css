@@ -409,14 +409,28 @@ ol {
 .blog-vd {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  overflow: hidden;
+  background-color: #000; /* Optional: nền đen */
+  border-radius: 8px; /* Optional: bo góc */
+}
+
+/* Đối với video thường (16:9) */
+.blog-vd--16-9 {
+  padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+}
+
+/* Đối với YouTube Shorts (4:3) */
+.blog-vd--9-16 {
+  padding-bottom: 177.78%; /* Tỷ lệ 9:16 (1 / 0.5625) */
 }
 
 .blog-iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 .blog__item {

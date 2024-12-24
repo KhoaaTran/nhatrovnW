@@ -374,47 +374,42 @@
         <div class="container">
           <h3 class="blog__heading">Có thể bạn quan tâm</h3>
           <div class="row">
-            <div class="col-lg-8 my-auto mx-auto">
-              <div class="blog-vd">
-                <div class="preloading"></div>
+            <div class="col-lg-6">
+              <div class="blog-vd blog-vd--16-9">
                 <iframe
                   class="blog-iframe"
                   src="https://www.youtube.com/embed/eUHrX9N09Sg"
                   title="YouTube video player"
-                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="blog-vd blog-vd--16-9 mt-lg-3">
+                <iframe
+                  class="blog-iframe"
+                  src="https://www.youtube.com/embed/C1f6bYDMfmg"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+
+              <div class="blog-vd blog-vd--16-9 mt-lg-3">
+                <iframe
+                  class="blog-iframe"
+                  src="https://www.youtube.com/embed/C1f6bYDMfmg"
+                  title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
               </div>
             </div>
 
-            <div class="col-lg-4 mx-auto mt-lg-0 mt-5 d-none">
-              <div class="form__deposit">
-                <h2 class="form__heading">
-                  Ký gửi cho thuê Căn hộ dịch vụ - Nhà trọ tại Nhatrovn
-                </h2>
-                <p class="form__desc">
-                  Contact us to get the best offer from our agents!
-                </p>
-                <form class="inner__form">
-                  <input
-                    placeholder="Họ và tên"
-                    class="form__input"
-                    type="text" />
-                  <input
-                    placeholder="Số điện thoại"
-                    class="form__input"
-                    type="text" />
-                  <input
-                    placeholder="Địa chỉ"
-                    class="form__input"
-                    type="text" />
-                  <input
-                    placeholder="Ghi chú"
-                    class="form__input"
-                    type="text" />
-
-                  <button class="form__btn" type="submit">Gửi</button>
-                </form>
+            <div class="col-lg-6">
+              <div class="blog-vd blog-vd--9-16">
+                <iframe
+                  class="blog-iframe"
+                  src="https://www.youtube.com/embed/9x7Nx-66K8c"
+                  title="YouTube Shorts"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -542,10 +537,13 @@
     </div>
     <div class="overlay"></div>
     <script>
-      const youtubeVD = document.querySelector(".blog-iframe");
-      const preLoading = document.querySelector(".preloading");
-      youtubeVD.addEventListener("load", () => {
-        preLoading.style.display = "none";
+      const youtubeVideos = document.querySelectorAll(".blog-iframe");
+      const preLoadings = document.querySelectorAll(".preloading");
+
+      youtubeVideos.forEach((video, index) => {
+        video.addEventListener("load", () => {
+          preLoadings[index].style.display = "none";
+        });
       });
     </script>
   </body>
