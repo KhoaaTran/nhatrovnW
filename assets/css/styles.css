@@ -412,6 +412,7 @@ ol {
   overflow: hidden;
   background-color: #000; /* Optional: nền đen */
   border-radius: 8px; /* Optional: bo góc */
+  margin-top: 20px;
 }
 
 /* Đối với video thường (16:9) */
