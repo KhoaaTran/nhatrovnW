@@ -52,6 +52,7 @@
 
 .overview__staff {
   margin-top: 10px;
+  font-weight: 600;
 }
 
 .overview__staff-wrapper {
@@ -127,7 +128,7 @@
 }
 
 .detail__body {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .detail__desc-title {
@@ -149,6 +150,10 @@
   margin-bottom: 10px;
 }
 
+.detail__desc--highlight {
+  font-weight: 600;
+}
+
 .detail__desc {
   margin-top: 10px;
 }
@@ -165,6 +170,12 @@
 .detail__desc-list-inner,
 .detail__desc-body {
   line-height: 1.5;
+}
+
+.detail__contact {
+  font-style: italic;
+  text-decoration: underline;
+  margin: 15px 0;
 }
 
 .overview__staff-name:hover {
