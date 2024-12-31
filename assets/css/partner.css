@@ -348,4 +348,22 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-left: 2rem;
+}
+
+.body__content-list--dot {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.body__content-list--num {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.body__content-list--content-strong {
+  font-weight: 600;
+}
+
+.body__content--desc {
 }
