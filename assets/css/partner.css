@@ -17,6 +17,26 @@
   object-fit: cover;
 }
 
+@media (max-width: 410px) {
+  .swiper-wrapper {
+    max-height: 142px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    flex-direction: column;
+  }
+  .overview__img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của col-12 */
+    height: auto; /* Duy trì tỷ lệ gốc */
+  }
+
+  .swiper-wrapper {
+    max-height: 200px;
+  }
+}
+
 .box__title {
   color: #b8000c;
   font: Bold 19px "Source Sans Pro", sans-serif;
@@ -123,8 +143,9 @@
 
 .body__heading {
   color: var(--primary-color);
-  font: Bold 20px "Source Sans Pro", sans-serif;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .box__img-wrap {
@@ -216,6 +237,16 @@
   font-weight: 400;
   color: #9e9da8;
   line-height: 146.667%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.link_url {
+  font-weight: 600;
 }
 
 .slider-content {

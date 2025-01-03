@@ -91,8 +91,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!-- Detail -->
-    <link rel="stylesheet" href="./assets/css/detail.css" />
+    <!-- Parner -->
+    <link rel="stylesheet" href="./assets/css/partner.css" />
     <!-- Responsive -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- SrollReveal -->
@@ -184,234 +184,131 @@
 
     <main class="main">
       <div class="container">
-        <div class="overview">
-          <div class="row overview__body">
-            <div class="overview__left swiper col-md-6 col-12">
-              <div class="swiper-wrapper overview__img-list">
-                <figure class="swiper-slide overview__img-wrap">
+        <div class="row overview">
+          <div class="swiper swiper-top col-lg-8 col-12">
+            <div class="swiper-wrapper overview__img-list">
+              <figure class="swiper-slide overview__img-wrap">
+                <a href="./detailPost_01.html">
                   <img
-                    src="./assets/images/app-01.png"
+                    src="./assets/images/partner_1.png"
                     alt=""
                     class="overview__img" />
-                </figure>
+                </a>
+              </figure>
 
-                <figure class="swiper-slide overview__img-wrap">
+              <figure class="swiper-slide overview__img-wrap">
+                <a href="./detailNews_01.html">
                   <img
-                    src="./assets/images/app-02.png"
+                    src="./assets/images/partner_2.png"
                     alt=""
                     class="overview__img" />
-                </figure>
-
-                <figure class="swiper-slide overview__img-wrap">
-                  <img
-                    src="./assets/images/app-03.png"
-                    alt=""
-                    class="overview__img" />
-                </figure>
-              </div>
-
-              <div class="swiper-pagination"></div>
-              <div class="prev_slide swiper-button-prev">
-                <i class="swiper__icon fa-solid fa-chevron-left"></i>
-              </div>
-              <div class="next_slide swiper-button-next">
-                <i class="swiper__icon fa-solid fa-chevron-right"></i>
-              </div>
+                </a>
+              </figure>
             </div>
-            <div class="col-md-6 col-12">
-              <div class="overview__wrap">
-                <h1 class="overview__heading">
-                  App Tìm trọ Nhatrovn - phục vụ người ở trọ
-                </h1>
 
-                <p class="overview__heading--desc">
-                  Nhập mã giới thiệu = mã số nhân viên để chat trực tiếp với
-                  nhân viên trên ứng dụng và được hỗ trợ tư vấn, đặt lịch xem
-                  phòng
-                </p>
-
-                <p class="overview__staff">Liên hệ hợp tác Doanh nghiệp:</p>
-                <div class="overview__staff-wrapper">
-                  <a href="tel: 0948905906" class="overview__staff-name"
-                    >TP Cần Thơ & khu vực Mê Kông: Mr Giáp 0948.905.906
-                  </a>
-                  <a href="tel: 0946853251" class="overview__staff-name"
-                    >TP.HCM và các tỉnh khác: Ms Tú 0946.853.251 - Giám đốc
-                    trung tâm Hỗ trợ Kinh doanh;
-                  </a>
-
-                  <a href="tel: 0987306394" class="overview__staff-name"
-                    >TP.HCM và các tỉnh khác: Ms Hà 0987.306.394 – P. Giám đốc
-                    trung tâm Hỗ trợ Kinh doanh
-                  </a>
-
+            <div class="swiper-pagination"></div>
+            <div class="prev_slide swiper-button-prev">
+              <i class="swiper__icon fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="next_slide swiper-button-next">
+              <i class="swiper__icon fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="box col-lg-4 col-12">
+            <div class="box__content mt-4 mt-lg-0">
+              <a href="#!">
+                <h2 class="overview__heading box__title">ĐỐI TÁC CHIẾN LƯỢC</h2>
+              </a>
+              <ul class="overview__list box__list">
+                <li class="overview__item box__item">
                   <a
-                    href="https://www.facebook.com/share/1C1GHg5JbM/?mibextid=wwXIfr"
-                    class="overview__staff-name">
-                    FACEBOOK
+                    href="./detailPost_01.html"
+                    class="overview__link box__link"
+                    ><i class="box__icon fa fa-caret-right"></i>HỢP TÁC NHÀ
+                    TRƯỜNG VÀ DOANH NGHIỆP NHATROVN - ANHOME - APP TÌM TRỌ
+                    NHATROVN
                   </a>
-                </div>
-
-                <div class="overview__desc-wrapper">
-                  <h2 class="overview__desc-title">
-                    Bạn đang tìm phòng trọ, việc làm hoặc nơi thực tập tại
-                    TP.HCM, Cần Thơ, Dĩ An? Hãy tải ngay ứng dụng Tìm Trọ -
-                    Nhatrovn trên Google Play hoặc App Store để:
-                  </h2>
-                  <ol class="overview__desc-body">
-                    <li class="overview__desc">
-                      <strong class="overview__highlight"
-                        >Tự do tìm kiếm:</strong
-                      >
-
-                      Hàng ngàn phòng trọ, tin tuyển dụng được cập nhật liên
-                      tục, giúp bạn dễ dàng tìm được lựa chọn phù hợp nhất.
-                    </li>
-                    <li class="overview__desc">
-                      <strong class="overview__highlight"
-                        >Thông tin chính xác:</strong
-                      >
-                      Hình ảnh thực tế, mô tả chi tiết, giúp bạn đưa ra quyết
-                      định nhanh chóng và chính xác.
-                    </li>
-                    <li class="overview__desc">
-                      <strong class="overview__highlight"
-                        >Hỗ trợ tận tình:</strong
-                      >
-                      Đội ngũ tư vấn sẵn sàng hỗ trợ bạn xem phòng trực tiếp,
-                      giải đáp mọi thắc mắc.
-                      <span class="overview__hashtag"
-                        >#timtro #nhatrovn #timviec #thuctap #tphcm #cantho
-                        #dian</span
-                      >
-                    </li>
-                  </ol>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="detail">
-          <h2 class="detail__heading">Thông tin chi tiết</h2>
-          <ul class="detail__body">
-            <li class="detail__desc-wrapper">
-              <h3 class="detail__desc-title">
-                Tại sao khách thuê trọ nên cài đặt app Tìm trọ Nhatrovn?
-              </h3>
-              <div class="detail__desc">
-                <ul class="detail__desc-list">
-                  <li class="detail__desc-list-inner">
-                    <strong class="detail__desc--highlight">
-                      Ứng dụng hữu ích đa năng:</strong
-                    >
-                    Ngoài việc dễ dàng tìm nơi trọ lý tưởng, bạn còn có thể tìm
-                    nơi thực tập hoặc một công việc có thu nhập tốt và cơ hội
-                    phát triển; hay những lúc cần đơn vị chuyển trọ uy tín, dịch
-                    vụ lắp đặt mạng internet tốc độ cao, cửa hàng phục vụ tận
-                    nơi các nhu cầu thiết yếu như nước uống, giao gạo, bình gas,
-                    giặt ủi, vệ sinh máy lạnh… thì mở app lên bạn sẽ tìm thấy
-                    ngay mà không cần mất thời gian tìm kiếm và nghi ngờ về độ
-                    uy tín.
-                  </li>
-                  <li class="detail__desc-list-inner">
-                    <strong class="detail__desc--highlight">
-                      Giao diện thân thiện:</strong
-                    >
-                    Dễ sử dụng, dễ tìm kiếm, thao tác đơn giản
+        <div class="row body">
+          <div class="content-left col-lg-8 col-12">
+            <div>
+              <h1 class="body__heading mb-lg-3">
+                Nhatrovn đã đồng hành cùng các bạn tân sinh viên trong mùa tựu
+                trường. Các bạn chỉ việc TẢI APP NGAY, NƠI Ở TRONG TẦM TAY.
+              </h1>
+              <div class="body__content">
+                <p class="body_content--desc">
+                  Chỉ cần 3 phút các bạn đã có thể tìm ngay một chỗ ở ưng ý cho
+                  mình với App Tìm Trọ - Nhatrovn
+                </p>
+                <p class="body_content--desc">
+                  Với ứng dụng này, các bạn có thể:
+                </p>
+                <ul class="body__content-list body__content-list--dot">
+                  <li>
+                    Tìm phòng dễ dàng, nhanh chóng và tiện lợi: có nhiều lựa
+                    chọn phòng trọ với thông tin chi tiết và hình ảnh
                   </li>
 
-                  <li class="detail__desc-list-inner">
-                    <strong class="detail__desc--highlight">
-                      Thông tin chính xác cao:</strong
-                    >
-                    Chủ nhà và doanh nghiệp đã được sàng lọc và đánh giá tốt về
-                    uy tín, chất lượng trước khi được đăng lên.
+                  <li>
+                    Đặt lịch xem phòng: được đội ngũ chuyên nghiệp, tận tâm tư
+                    vấn 24/7, cũng như đưa đến tận nơi xem phòng trực tiếp
                   </li>
 
-                  <li class="detail__desc-list-inner">
-                    <strong class="detail__desc--highlight">
-                      Cập nhật thông tin phòng trống liên tục:</strong
-                    >
-                    Luôn có những phòng trọ mới được đăng tải mỗi ngày trên khắp
-                    TPHCM, Cần Thơ, Long Hậu Long An và Dĩ An Bình Dương, dĩ
-                    nhiên danh sách này sẽ được mở rộng thêm trong thời gian
-                    tới.
+                  <li>
+                    Nhận ưu đãi hấp dẫn: Cập nhật các chương trình khuyến mãi và
+                    ưu đãi Nhatrovn dành riêng cho sinh viên.
                   </li>
+                </ul>
 
-                  <li class="detail__desc-list-inner">
-                    <strong class="detail__desc--highlight">
-                      Hỗ trợ khách hàng 24/7:</strong
-                    >
-                    Giải đáp mọi thắc mắc và hỗ trợ bạn mọi lúc mọi nơi
+                <p class="body_content--desc">
+                  Tải App Tìm Trọ - Nhatrovn ngay hôm nay để dễ dàng tìm được
+                  chỗ ở lý tưởng và tận hưởng cuộc sống sinh viên một cách trọn
+                  vẹn bạn nhé!
+                </p>
+
+                <p class="body_content--desc">
+                  Tải ứng dụng tại link:
+                  <a class="link_url" href="https://me-qr.com/l0oFxBH5">đây</a>
+                  (áp dụng cho cả hệ điều hành Android và iOs)
+                </p>
+
+                <p class="body_content--desc">
+                  Hy vọng với App Tìm trọ - Nhatrovn có thể giúp được nhiều bạn
+                  sinh viên tìm được phòng trọ dễ dàng và ưng ý
+                </p>
+
+                <p class="body_content--desc">
+                  #nhatrovn #apptimtro #timtro_nhatrovn
+                  #truongcaodangdaivietsaigon #HIU #HSU #OU #UFM #SGU #TLU
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-flex">
+            <div class="box">
+              <div class="box__content mt-4 mt-lg-0">
+                <a href="#!">
+                  <h2 class="body-right__title box__title">TIN TỨC</h2>
+                </a>
+                <ul class="body__list box__list">
+                  <li class="overview__item box__item">
+                    <a
+                      href="./detailNews_01.html"
+                      class="overview__link box__link"
+                      ><i class="box__icon fa fa-caret-right"></i> NHATROVN VÀ
+                      NHÀ TRƯỜNG: CHUNG TAY ĐÀO TẠO NHÂN TÀI, HỖ TRỢ SINH VIÊN
+                      TOÀN DIỆN
+                    </a>
                   </li>
                 </ul>
               </div>
-            </li>
-
-            <li class="detail__desc-wrapper">
-              <h3 class="detail__desc-title">
-                Tại sao doanh nghiệp nên hợp tác cùng Nhatrovn đem sản phẩm/dịch
-                vụ đến với cộng đồng người dùng app Tìm trọ Nhatrovn?
-              </h3>
-              <div class="detail__desc">
-                <ul class="detail__desc-list">
-                  <li class="detail__desc-list-inner">
-                    Đồng hành với Nhatrovn, doanh nghiệp không chỉ đơn thuần
-                    quảng cáo sản phẩm/dịch vụ mà còn đang đem giá trị đến cho
-                    một cộng đồng khách hàng đông đảo và chất lượng.
-                  </li>
-
-                  <li class="detail__desc-list-inner">
-                    Người ở trọ là đối tượng khách hàng chính cần được hỗ trợ để
-                    có thể dễ dàng tìm thấy các dịch vụ tiện ích như vận chuyển
-                    đồ, lắp mạng internet, giao nhu yếu phẩm (nước uống, gạo,
-                    bình gas…), dịch vụ giặt ủi, sửa chữa vệ sinh máy móc, dọn
-                    dẹp vệ sinh phòng... ngay trên ứng dụng mà họ đang sử dụng
-                    để tìm phòng trọ. Điều này không chỉ giúp doanh nghiệp tăng
-                    doanh thu mà còn giúp khẳng định uy tín với khách trọ khi
-                    giúp họ nhanh chóng tiếp cận được sản phẩm/dịch vụ một cách
-                    tiện lợi và đơn giản nhất.
-                  </li>
-                  <li class="detail__desc-list-inner">
-                    Bật app Tìm trọ Nhatrovn lên, tất cả những gì khách ở trọ
-                    cần, cùng nhau chúng tôi sẽ mang đến giải pháp!
-                  </li>
-                </ul>
-                <h4 class="detail__desc--highlight">
-                  App Tìm trọ Nhatrovn - Nơi kết nối nhu cầu của người thuê trọ
-                  và doanh nghiệp.
-                </h4>
-
-                <br />
-
-                <h4 class="detail__desc--highlight">
-                  Hãy để Nhatrovn đồng hành cùng bạn tìm kiếm căn phòng cũng như
-                  công việc mơ ước và cùng các doanh nghiệp phát triển bền vững!
-                </h4>
-              </div>
-            </li>
-          </ul>
-
-          <p class="detail__contact">Chi tiết hợp tác vui lòng liên hệ</p>
-
-          <div class="detail__desc">
-            <ul class="detail__desc-list">
-              <li class="detail__desc-list-inner">
-                <strong class="detail__desc--highlight">
-                  TP Cần Thơ & khu vực Đồng bằng SCL: Mr Giáp
-                  0948.905.906</strong
-                >
-              </li>
-
-              <li class="detail__desc-list-inner">
-                <strong class="detail__desc--highlight">
-                  TP.HCM và các khu vực khác: Ms Tú 0946.853.251 - Giám đốc
-                  trung tâm Hỗ trợ Kinh doanh; Ms Hà 0987.306.394 – P. Giám đốc
-                  trung tâm Hỗ trợ Kinh doanh</strong
-                >
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
