@@ -13,6 +13,7 @@ const subMenuLv2 = document.querySelector(".navbar-lv2");
 const footerProduct = document.querySelector(".footer__link-product");
 const footerProductIcon = document.querySelector(".footer__link-icon");
 const footerLinkProduct = document.querySelector(".footer__list-product");
+const popUpImage = document.getElementById("pop-up-img");
 
 headerLink.addEventListener("click", function () {
   subMenuLv2.classList.toggle("d-block");
@@ -87,6 +88,27 @@ function convertDateObject(time) {
     time.getMonth() + 1
   )}/${time.getFullYear()}`;
 }
+
+function linkPopup() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Kiểm tra thiết bị iOS
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.open(
+      "https://apps.apple.com/vn/app/t%C3%ACm-tr%E1%BB%8D-nhatrovn/id6472759778",
+      "_blank"
+    );
+  }
+  // Thiết bị Android hoặc khác
+  else {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.nhatrovn.vn",
+      "_blank"
+    );
+  }
+}
+
+popUpImage.addEventListener("click", linkPopup);
 
 // Set LocalStorage
 function setKey(key) {

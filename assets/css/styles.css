@@ -578,6 +578,7 @@ ol {
   object-fit: contain; /* Giữ nguyên tỷ lệ và vừa với khung */
   display: block;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /* Icon đóng */
